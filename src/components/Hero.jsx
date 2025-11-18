@@ -1,0 +1,35 @@
+import React from 'react';
+
+const Hero = () => {
+  return (
+    <section id="home-section" className="hero-section">
+      <div className="hero-container">
+        <div className="hero-row">
+          <div className="hero-col-left">
+            <div className="hero-content">
+              <span className="hero-subheading">Hello! This is Hussain Ijaz</span>
+              <h1 className="hero-title">
+                Creative <span className="hero-highlight">UI/UX</span> Designer & Developer
+              </h1>
+              <div className="hero-buttons">
+                <a href="#contact-section" className="hero-btn hero-btn-primary">Hire me</a>
+                <a href="/My-euro-pass-CV.pdf" className="hero-btn hero-btn-outline">Download CV</a>
+              </div>
+            </div>
+          </div>
+          <div className="hero-col-right">
+            <div className="hero-image">
+              <img 
+                src="/images/bg_1.png" 
+                alt="Hussain Ijaz" 
+                className="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
