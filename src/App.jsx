@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,6 +13,7 @@ import HireMe from './components/HireMe';
 import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
+import BlogPost from './components/BlogPost';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -26,25 +27,35 @@ function App() {
       easing: 'ease-in-out',
       mirror: false
     });
-    
+
     // Refresh AOS when route changes
     AOS.refresh();
   }, []);
 
+  // Main Portfolio Page
+  const PortfolioPage = () => (
+    <>
+      <Hero />
+      <Counter />
+      <About />
+      <Skills />
+      <Services />
+      <HireMe />
+      <Projects />
+      {/* <Testimonials /> */}
+      <Blog />
+      <Contact />
+    </>
+  );
+
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="App">
         <Navbar />
-        <Hero />
-        <Counter />
-        <About />
-        <Skills />
-        <Services />
-        <HireMe />
-        <Projects />
-        {/* <Testimonials /> */}
-        {/* <Blog /> */}
-        <Contact />
+        <Routes>
+          <Route path="/" element={<PortfolioPage />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+        </Routes>
         <Footer />
       </div>
     </Router>

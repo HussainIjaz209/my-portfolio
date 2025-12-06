@@ -9,19 +9,22 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const links = [
-    { href: "#home-section", text: "Home" },
-    { href: "#about-section", text: "About" },
-    { href: "#services-section", text: "Services" },
-    { href: "#projects-section", text: "Projects" },
-    { href: "#contact-section", text: "Contact" }
+    { section: "home-section", text: "Home" },
+    { section: "about-section", text: "About" },
+    { section: "skills-section", text: "Skills" },
+    { section: "services-section", text: "Services" },
+    { section: "projects-section", text: "Projects" },
+    { section: "blog-section", text: "Blog" },
+    { section: "contact-section", text: "Contact" }
   ];
 
   const services = [
-    "Web Design",
     "Web Development",
-    "Business Strategy",
-    "Data Analysis",
-    "Graphic Design"
+    "UI/UX Design",
+    "Full-Stack Development",
+    "Database Management",
+    "API Development",
+    "Responsive Design"
   ];
 
   const socialLinks = [
@@ -29,6 +32,14 @@ const Footer = () => {
     { icon: "facebook", href: "https://www.facebook.com/share/xtXVmDuwHZ4bLmM7/", platform: "facebook" },
     { icon: "linkedin", href: "https://www.linkedin.com/in/hussain-ijaz-56b53233b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", platform: "Linkedin" }
   ];
+
+  // Scroll to section functionality
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   // Back to top functionality
   const scrollToTop = () => {
@@ -71,9 +82,13 @@ const Footer = () => {
               <ul className="footer-list">
                 {links.map((link, index) => (
                   <li key={index} className="footer-list-item">
-                    <a href={link.href} className="footer-link">
+                    <button
+                      onClick={() => scrollToSection(link.section)}
+                      className="footer-link"
+                      style={{ background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}
+                    >
                       {link.text}
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>
@@ -85,9 +100,13 @@ const Footer = () => {
               <ul className="footer-list">
                 {services.map((service, index) => (
                   <li key={index} className="footer-list-item">
-                    <a href="#services-section" className="footer-link">
+                    <button
+                      onClick={() => scrollToSection('services-section')}
+                      className="footer-link"
+                      style={{ background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}
+                    >
                       {service}
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>
@@ -97,12 +116,7 @@ const Footer = () => {
             <div className="footer-widget">
               <h2 className="footer-heading">Have Questions?</h2>
               <ul className="footer-contact">
-                <li className="footer-contact-item">
-                  <div className="contact-icon"><FontAwesomeIcon icon={faWhatsapp} /></div>
-                  <div className="contact-text">
-                    Moh:Mazeed Khail. Manglor, Swat, KPK, Pakistan
-                  </div>
-                </li>
+
                 <li className="footer-contact-item">
                   <div className="contact-icon"><FontAwesomeIcon icon={faPhone} /></div>
                   <div className="contact-text">

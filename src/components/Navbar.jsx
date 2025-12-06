@@ -13,25 +13,37 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { href: "#home-section", label: "Home" },
-    { href: "#about-section", label: "About" },
-    { href: "#skills-section", label: "Skills" },
-    { href: "#services-section", label: "Services" },
-    { href: "#projects-section", label: "Projects" },
-    { href: "#blog-section", label: "Blog" },
-    { href: "#contact-section", label: "Contact" }
+    { section: "home-section", label: "Home" },
+    { section: "about-section", label: "About" },
+    { section: "skills-section", label: "Skills" },
+    { section: "services-section", label: "Services" },
+    { section: "projects-section", label: "Projects" },
+    { section: "blog-section", label: "Blog" },
+    { section: "contact-section", label: "Contact" }
   ];
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setIsOpen(false);
+    }
+  };
 
   return (
     <nav className={`navbar-custom ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
         {/* Logo/Brand */}
-        <a className="navbar-brand-custom" href="#home-section">
+        <button
+          className="navbar-brand-custom"
+          onClick={() => scrollToSection('home-section')}
+          style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+        >
           Hussain ijaz<span className="brand-dot-custom">.</span>
-        </a>
-        
+        </button>
+
         {/* Hamburger Menu */}
-        <button 
+        <button
           className={`navbar-toggler-custom ${isOpen ? 'active' : ''}`}
           type="button"
           onClick={() => setIsOpen(!isOpen)}
@@ -47,13 +59,13 @@ const Navbar = () => {
           <ul className="navbar-menu">
             {navItems.map((item, index) => (
               <li key={index} className="navbar-item">
-                <a 
-                  href={item.href} 
+                <button
                   className="navbar-link"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => scrollToSection(item.section)}
+                  style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
                   <span className="navbar-link-text">{item.label}</span>
-                </a>
+                </button>
               </li>
             ))}
           </ul>
