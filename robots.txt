@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 
 # Sitemap location (optional but recommended)
-Sitemap: https://school-management-system-omega-five.vercel.app/sitemap.xml
+Sitemap: https://my-portfolio-b2iu.vercel.app/sitemap.xml
