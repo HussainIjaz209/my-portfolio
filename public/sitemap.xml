@@ -1,16 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>https://my-portfolio-b2iu.vercel.app/</loc>
-  <lastmod>2025-11-18T17:50:46+00:00</lastmod>
+  <loc>https://school-management-system-omega-five.vercel.app/</loc>
+  <lastmod>2025-12-08</lastmod>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/Hussain.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%201.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2010.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2011.jpeg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2012.jpeg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2013.jpeg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2014.jpeg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2015.jpeg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2016.jpeg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%2017.jpeg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%202.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%203.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%204.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%205.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%206.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%207.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%208.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz%209.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussain%20ijaz.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>https://school-management-system-omega-five.vercel.app/images/assets/hussainIjaz.jpg</image:loc>
+  </image:image>
 </url>
-
 
 </urlset>
