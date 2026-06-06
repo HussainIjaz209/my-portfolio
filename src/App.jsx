@@ -11,7 +11,7 @@ import Skills from './components/Skills';
 import Services from './components/Services';
 import HireMe from './components/HireMe';
 import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
+// import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
 import Contact from './components/Contact';

@@ -57,7 +57,7 @@ const Projects = () => {
       image: "images/work-6.jpg",
       title: "School Management System",
       category: "Web Development",
-      link: "https://school-management-system-omega-five.vercel.app/"
+      link: "https://oks-kappa.vercel.app/"
     },
     // {
     //   image: "images/work-7.jpg",
